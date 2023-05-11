@@ -1,0 +1,85 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(fondo.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Orbitron', 'Roboto', sans-serif;
+	min-height: 90vh;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 90px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	color: #141414;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #3d3252; /*141414*/
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.neon{
+    font-size: 4em;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 5px #673dff, /*03e9f4*/
+    0 0 25px #673dff, 
+    0 0 50px #673dff,
+    0 0 100px #673dff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: 1s;
+}
